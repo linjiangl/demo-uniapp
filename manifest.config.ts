@@ -1,17 +1,37 @@
 import { defineManifestConfig } from '@uni-helper/vite-plugin-uni-manifest'
+import path from 'node:path'
+import { loadEnv } from 'vite'
+
+const env = loadEnv(process.env.NODE_ENV!, path.resolve(process.cwd(), 'env'))
+const {
+  VITE_APP_TITLE,
+  VITE_UNI_APPID,
+  VITE_WX_APPID,
+  VITE_APP_PUBLIC_BASE,
+  VITE_FALLBACK_LOCALE,
+} = env
 
 export default defineManifestConfig({
-  'name': '',
-  'appid': '',
-  'description': '',
-  'versionName': '1.0.0',
-  'versionCode': '100',
-  'transformPx': false,
+  name: VITE_APP_TITLE,
+  appid: VITE_UNI_APPID,
+  description: '',
+  versionName: '1.0.0',
+  versionCode: '100',
+  transformPx: false,
+  locale: VITE_FALLBACK_LOCALE, // 'zh-Hans'
+  h5: {
+    router: {
+      base: VITE_APP_PUBLIC_BASE,
+    },
+  },
   /* 5+App特有相关 */
   'app-plus': {
     usingComponents: true,
     nvueStyleCompiler: 'uni-app',
     compilerVersion: 3,
+    compatible: {
+      ignoreVersion: true,
+    },
     splashscreen: {
       alwaysShowBeforeRender: true,
       waiting: true,
@@ -24,6 +44,9 @@ export default defineManifestConfig({
     distribute: {
       /* android打包配置 */
       android: {
+        minSdkVersion: 30,
+        targetSdkVersion: 30,
+        abiFilters: ['armeabi-v7a', 'arm64-v8a'],
         permissions: [
           '<uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>',
           '<uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>',
@@ -52,7 +75,7 @@ export default defineManifestConfig({
   'quickapp': {},
   /* 小程序特有相关 */
   'mp-weixin': {
-    appid: '',
+    appid: VITE_WX_APPID,
     setting: {
       urlCheck: false,
     },
@@ -73,8 +96,8 @@ export default defineManifestConfig({
     darkmode: true,
     themeLocation: 'theme.json',
   },
-  'uniStatistics': {
+  uniStatistics: {
     enable: false,
   },
-  'vueVersion': '3',
+  vueVersion: '3',
 })

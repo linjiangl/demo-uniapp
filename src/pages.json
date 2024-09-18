@@ -7,6 +7,10 @@
     {
       "path": "pages/about",
       "type": "page"
+    },
+    {
+      "path": "pages/login/index",
+      "type": "page"
     }
   ],
   "globalStyle": {
