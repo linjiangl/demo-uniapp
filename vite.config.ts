@@ -1,4 +1,4 @@
-import path from "node:path";
+import path from "node:path"
 import dayjs from 'dayjs'
 import { fileURLToPath, URL } from 'node:url'
 import { defineConfig, loadEnv } from 'vite'

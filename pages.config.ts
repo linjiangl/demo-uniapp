@@ -13,4 +13,11 @@ export default defineUniPages({
     navigationStyle: 'custom',
   },
   subPackages: [],
+  easycom: {
+    "autoscan": true,
+    "custom": {
+      "^wd-(.*)": "wot-design-uni/components/wd-$1/wd-$1.vue",
+      "tui-(.*)": "@/uni_modules/thorui/tui-$1/tui-$1.vue"
+    }
+  }
 })
