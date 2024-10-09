@@ -29,12 +29,9 @@ export default async ({ command, mode }) => {
 
   const env = loadEnv(mode, path.resolve(process.cwd(), 'env'))
   const {
-    VITE_APP_PORT,
-    VITE_SERVER_BASEURL,
     VITE_DELETE_CONSOLE,
     VITE_SHOW_SOURCEMAP,
     VITE_APP_PROXY,
-    VITE_APP_PROXY_PREFIX,
   } = env
   console.log('环境变量 env -> ', env)
 
@@ -49,7 +46,6 @@ export default async ({ command, mode }) => {
       UniPages({
         dts: 'src/types/uni-pages.d.ts',
         routeBlockLang: 'json5',
-        // dts: 'src/types/uni-pages.d.ts',
       }),
       UniLayouts(),
       UniPlatform(),
@@ -78,14 +74,7 @@ export default async ({ command, mode }) => {
         transformIndexHtml(html) {
           return html.replace('%BUILD_TIME%', dayjs().format('YYYY-MM-DD HH:mm:ss'))
         },
-      },
-      // 打包分析插件，h5 + 生产环境才弹出
-      UNI_PLATFORM === 'h5' && mode === 'production' && visualizer({
-        filename: './node_modules/.cache/visualizer/stats.html',
-        open: true,
-        gzipSize: true,
-        brotliSize: true,
-      }),
+      }
     ],
     define: {
       __UNI_PLATFORM__: JSON.stringify(UNI_PLATFORM),
