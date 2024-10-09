@@ -23,5 +23,12 @@
     "navigationBarTitleText": "Uni Creator",
     "navigationStyle": "custom"
   },
-  "subPackages": []
+  "subPackages": [],
+  "easycom": {
+    "autoscan": true,
+    "custom": {
+      "^wd-(.*)": "wot-design-uni/components/wd-$1/wd-$1.vue",
+      "tui-(.*)": "@/uni-modules/thor-ui/tui-$1/tui-$1.vue"
+    }
+  }
 }
