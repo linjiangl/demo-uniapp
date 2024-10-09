@@ -21,4 +21,5 @@ dist
 *.sw?
 
 .eslintrc-auto-import.json
+.components.d.ts
 src/types/auto-import.d.ts
