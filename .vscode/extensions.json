@@ -1,6 +1,14 @@
 {
   "recommendations": [
-    "vue.volar",
+    "EditorConfig.EditorConfig",
+    "Vue.volar",
+    "sdras.vue-vscode-snippets",
+    "esbenp.prettier-vscode",
+    "christian-kohler.path-intellisense",
+    "mhutchie.git-graph",
+    "eamodio.gitlens",
+    "mikestead.dotenv",
+    "donjayamanne.githistory",
     "mrmaoddxxaa.create-uniapp-view",
     "uni-helper.uni-helper-vscode",
     "uni-helper.uni-app-schemas-vscode",
