@@ -1,34 +1,26 @@
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from "vue";
 
-const name = ref('')
-const popup = ref()
+const name = ref("");
+const popup = ref();
 
 function handleClick() {
-  popup.value.open('top')
+  popup.value.open("top");
 }
 </script>
 
 <template>
   <view class="input-box">
-    <input
-      v-model="name"
-      placeholder="What's your name?"
-    >
+    <input v-model="name" placeholder="What's your name?" />
   </view>
   <view>
-    <button :disabled="!name" @click="handleClick">
-      Hello
-    </button>
+    <button :disabled="!name" @click="handleClick">Hello</button>
   </view>
 
   <uni-popup ref="popup" type="bottom">
-    <text class="popup_label">
-      Hello{{ `  ${name}` }} 👏
-    </text>
+    <text class="popup_label"> Hello{{ `  ${name}` }} 👏 </text>
   </uni-popup>
 
-  <tui-rate :current="2" ></tui-rate>
   <view>
     <wd-text type="primary" text="主色"></wd-text>
     <wd-text type="error" text="错误"></wd-text>

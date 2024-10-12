@@ -10,7 +10,11 @@
     },
     {
       "path": "pages/login/index",
-      "type": "page"
+      "type": "page",
+      "style": {
+        "navigationBarTitleText": "关于"
+      },
+      "layout": "general"
     }
   ],
   "globalStyle": {
