@@ -8,6 +8,7 @@
       fixed
       active-color="#ee0a24"
       inactive-color="#7d7e80"
+      @change="changeTabBarIndex"
     >
       <wd-tabbar-item
         is-dot
@@ -26,6 +27,7 @@
 <script lang="ts" setup>
 import type { ConfigProviderThemeVars } from "wot-design-uni";
 import { ref } from "vue";
+import { currRoute } from "@/utils/route";
 
 const themeVars: ConfigProviderThemeVars = {
   // colorTheme: "red",
@@ -33,5 +35,26 @@ const themeVars: ConfigProviderThemeVars = {
   // buttonPrimaryColor: "#07c160",
 };
 
-const tabBarIndex = ref<number>(0);
+const tabBarPages = ["/pages/index", "/pages/about"];
+
+const tabBarIndex = ref<number>(getTabBarIndex());
+
+function changeTabBarIndex({ value }: { value: number }) {
+  if (value < tabBarPages.length) {
+    uni.navigateTo({
+      url: tabBarPages[value],
+    });
+  }
+}
+
+function getTabBarIndex() {
+  const currentPage = currRoute();
+
+  const index = tabBarPages.findIndex((item) => {
+    return item === currentPage.path;
+  });
+
+  return index >= 0 ? index : 0;
+}
 </script>
+@/utils/route
