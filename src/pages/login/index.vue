@@ -1,9 +1,9 @@
 <route lang="json5">
 {
   style: {
-    navigationBarTitleText: "关于",
-  },
-  layout: "general",
+    navigationBarTitleText: "登录",
+    navigationStyle: "custom"
+  }
 }
 </route>
 

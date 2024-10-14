@@ -14,7 +14,8 @@
     "baseUrl": ".",
     "outDir": "dist",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": ["./src/*"],
+      "~/*": ["./*"]
     },
     "types": [
       "@dcloudio/types",
@@ -26,13 +27,7 @@
     ]
   },
   "exclude": ["node_modules"],
-  "include": [
-    "**/*.d.ts",
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.jsx",
-    "src/**/*.vue"
-  ],
+  "include": ["**/*.d.ts", "src/**/*.ts", "src/**/*.tsx", "src/**/*.jsx", "src/**/*.vue"],
   "vueCompilerOptions": {
     "plugins": ["@uni-helper/uni-app-types/volar-plugin"]
   }

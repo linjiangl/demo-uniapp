@@ -12,4 +12,12 @@ import AppLogos from "@/components/AppLogos.vue";
 import InputEntry from "@/components/InputEntry.vue";
 
 const aa = 1;
+
+onLoad((e) => {
+  console.log(e, "index");
+});
+
+onMounted(() => {
+  console.log("xxx");
+});
 </script>
