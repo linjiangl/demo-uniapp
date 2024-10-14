@@ -10,14 +10,9 @@ export default defineUniPages({
   pages: [],
   subPackages: [],
   tabBar: {
-    color: "#999999",
-    selectedColor: "#018d71",
-    backgroundColor: "#F8F8F8",
-    borderStyle: "black",
-    height: "50px",
-    fontSize: "10px",
-    iconWidth: "24px",
-    spacing: "3px",
+    color: "#bfbfbf",
+    selectedColor: "#01beff",
+    backgroundColor: "#FFFFFF",
     list: [
       {
         pagePath: "pages/index",
