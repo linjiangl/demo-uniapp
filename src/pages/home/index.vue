@@ -1,22 +1,23 @@
+<route lang="json5">
+{
+  style: {
+    navigationStyle: "custom",
+    navigationBarTitleText: "首页"
+  },
+  type: "home"
+}
+</route>
 <template>
-  <view px-10 py-20 text-center>
-    <AppLogos />
-    <InputEntry />
-    <AppFooter />
-  </view>
+  <view>首页</view>
+  <wd-button @click="go">关于我们</wd-button>
 </template>
 
 <script setup lang="ts">
-  import { onMounted } from "vue";
-  import AppFooter from "@/components/AppFooter.vue";
-  import AppLogos from "@/components/AppLogos.vue";
-  import InputEntry from "@/components/InputEntry.vue";
-
-  const aa = 1;
-
-  // onLoad(e => {
-  //   console.log(e, "index");
-  // });
+  function go() {
+    uni.navigateTo({
+      url: "/pages/home/about"
+    });
+  }
 
   onMounted(() => {
     console.log("xxx");

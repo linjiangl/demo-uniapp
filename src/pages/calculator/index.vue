@@ -1,12 +1,12 @@
 <route lang="json5">
 {
   style: {
-    navigationBarTitleText: "我的"
+    navigationBarTitleText: "工具"
   }
 }
 </route>
 <template>
-  <view>我的</view>
+  <view>工具</view>
 </template>
 
 <script setup lang="ts">

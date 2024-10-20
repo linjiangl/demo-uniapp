@@ -1,9 +1,10 @@
 <route lang="json5">
 {
   style: {
-    navigationBarTitleText: "关于"
+    navigationBarTitleText: "关于",
+    navigationBarTextStyle: "black"
   },
-  layout: "tabbar"
+  type: ""
 }
 </route>
 <template>
