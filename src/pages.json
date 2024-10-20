@@ -7,11 +7,15 @@
   },
   "pages": [
     {
-      "path": "pages/index",
-      "type": "home"
+      "path": "pages/authorize/login",
+      "type": "page",
+      "style": {
+        "navigationBarTitleText": "登录",
+        "navigationStyle": "custom"
+      }
     },
     {
-      "path": "pages/about",
+      "path": "pages/home/about",
       "type": "page",
       "style": {
         "navigationBarTitleText": "关于"
@@ -19,12 +23,12 @@
       "layout": "tabbar"
     },
     {
-      "path": "pages/login/index",
-      "type": "page",
-      "style": {
-        "navigationBarTitleText": "登录",
-        "navigationStyle": "custom"
-      }
+      "path": "pages/home/index",
+      "type": "page"
+    },
+    {
+      "path": "pages/my/index",
+      "type": "page"
     }
   ],
   "subPackages": [],
