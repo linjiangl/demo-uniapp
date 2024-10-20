@@ -18,6 +18,7 @@
     "uni-helper.uni-cloud-snippets-vscode",
     "yoavbls.pretty-ts-errors",
     "johnsoncodehk.vscode-tsconfig-helper",
-    "antfu.unocss"
+    "antfu.unocss",
+    "redjue.git-commit-plugin"
   ]
 }
