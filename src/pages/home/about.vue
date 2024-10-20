@@ -8,7 +8,9 @@
 }
 </route>
 <template>
-  <view class="u-tips-color font-size-28rpx" @click="toCopy"> 微信号:uni-app </view>
+  <view class="container">
+    <view class="u-tips-color font-size-28rpx" @click="toCopy"> 微信号:uni-app </view>
+  </view>
 </template>
 
 <script setup lang="ts">

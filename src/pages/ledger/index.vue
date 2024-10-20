@@ -6,7 +6,7 @@
 }
 </route>
 <template>
-  <view>记账</view>
+  <view class="container">记账</view>
 </template>
 
 <script setup lang="ts">

@@ -1,2 +1,25 @@
-@import './iconfont.css';
+@import "./iconfont.css";
 
+/* #ifndef APP-NVUE */
+page {
+  background-color: #fafafa;
+  font-size: 32rpx;
+  font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+  color: transparent !important;
+  display: none;
+}
+
+button::after {
+  border: none;
+}
+
+.container {
+  margin-top: 20rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+}

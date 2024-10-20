@@ -6,7 +6,7 @@
 }
 </route>
 <template>
-  <view>工具</view>
+  <view class="container">工具</view>
 </template>
 
 <script setup lang="ts">
