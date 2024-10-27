@@ -14,30 +14,41 @@ export default defineUniPages({
     color: "#bfbfbf",
     selectedColor: "#01beff",
     backgroundColor: "#FFFFFF",
+    borderStyle: "white",
+    spacing: "8rpx",
+    height: "110rpx",
+    fontSize: "21rpx",
+    midButton: {
+      width: "110rpx",
+      height: "165rpx",
+      text: "记账",
+      iconWidth: "110rpx",
+      iconPath: "/static/images/tabbar/center.png"
+    },
     list: [
       {
         pagePath: "pages/home/index",
         text: "首页",
         iconPath: "static/images/tabbar/home.png",
-        selectedIconPath: "static/images/tabbar/home-active.png"
+        selectedIconPath: "static/images/tabbar/home-full.png"
       },
       {
         pagePath: "pages/calculator/index",
-        text: "工具",
-        iconPath: "static/images/tabbar/calculator.png",
-        selectedIconPath: "static/images/tabbar/calculator-active.png"
+        text: "计算",
+        iconPath: "/static/images/tabbar/calc.png",
+        selectedIconPath: "/static/images/tabbar/calc-full.png"
       },
       {
         pagePath: "pages/ledger/index",
-        text: "记账",
-        iconPath: "static/images/tabbar/writing.png",
-        selectedIconPath: "static/images/tabbar/writing-active.png"
+        text: "账单",
+        iconPath: "/static/images/tabbar/ledger.png",
+        selectedIconPath: "/static/images/tabbar/ledger-full.png"
       },
       {
         pagePath: "pages/my/index",
         text: "我的",
-        iconPath: "static/images/tabbar/user.png",
-        selectedIconPath: "static/images/tabbar/user-active.png"
+        iconPath: "/static/images/tabbar/user.png",
+        selectedIconPath: "/static/images/tabbar/user-full.png"
       }
     ]
   },

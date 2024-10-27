@@ -3,8 +3,7 @@
   style: {
     navigationBarTitleText: "关于",
     navigationBarTextStyle: "black"
-  },
-  type: ""
+  }
 }
 </route>
 <template>

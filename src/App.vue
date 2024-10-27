@@ -1,7 +1,11 @@
 <script setup lang="ts">
-import { onLaunch } from '@dcloudio/uni-app'
+  import { onLaunch } from "@dcloudio/uni-app";
 
-onLaunch(() => {})
+  onLaunch(() => {
+    uni.onTabBarMidButtonTap(() => {
+      console.log("中间按钮点击回调");
+    });
+  });
 </script>
 
 <style></style>

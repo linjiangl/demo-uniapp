@@ -48,3 +48,11 @@
     console.log("xxx");
   });
 </script>
+
+<style lang="scss" scoped>
+  .container {
+    margin-top: 20rpx;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+  }
+</style>
