@@ -9,6 +9,14 @@
 </route>
 <template>
   <view class="container">
+    <view class="tui-page__bd">
+      <view class="tui-title--text">背景色banner</view>
+      <tui-banner-arc background="-webkit-linear-gradient(#5473FF,#6DA8FF)"></tui-banner-arc>
+      <view class="tui-title--text">背景色banner</view>
+      <tui-banner-arc height="520" percent="140" background="-webkit-linear-gradient(#F27635,#FBC42E)">
+        <view class="tui-banner--text">自定义内容</view>
+      </tui-banner-arc>
+    </view>
     <wd-swiper :list="swiperList" autoplay v-model:current="current" @click="handleClick" @change="onChange"></wd-swiper>
 
     <view>首页</view>

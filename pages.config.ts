@@ -30,25 +30,29 @@ export default defineUniPages({
         pagePath: "pages/home/index",
         text: "首页",
         iconPath: "static/images/tabbar/home.png",
-        selectedIconPath: "static/images/tabbar/home-full.png"
+        selectedIconPath: "static/images/tabbar/home-full.png",
+        visible: true
       },
       {
         pagePath: "pages/calculator/index",
         text: "计算",
         iconPath: "/static/images/tabbar/calc.png",
-        selectedIconPath: "/static/images/tabbar/calc-full.png"
+        selectedIconPath: "/static/images/tabbar/calc-full.png",
+        visible: false
       },
       {
         pagePath: "pages/ledger/index",
         text: "账单",
         iconPath: "/static/images/tabbar/ledger.png",
-        selectedIconPath: "/static/images/tabbar/ledger-full.png"
+        selectedIconPath: "/static/images/tabbar/ledger-full.png",
+        visible: false
       },
       {
         pagePath: "pages/my/index",
         text: "我的",
         iconPath: "/static/images/tabbar/user.png",
-        selectedIconPath: "/static/images/tabbar/user-full.png"
+        selectedIconPath: "/static/images/tabbar/user-full.png",
+        visible: false
       }
     ]
   },

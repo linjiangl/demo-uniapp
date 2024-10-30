@@ -1,11 +1,6 @@
-import {
-  defineConfig,
-  presetIcons,
-  transformerDirectives,
-  transformerVariantGroup,
-} from 'unocss'
+import { defineConfig, presetIcons, transformerDirectives, transformerVariantGroup } from "unocss";
 
-import { presetUni } from '@uni-helper/unocss-preset-uni'
+import { presetUni } from "@uni-helper/unocss-preset-uni";
 
 export default defineConfig({
   presets: [
@@ -14,13 +9,10 @@ export default defineConfig({
       scale: 1.2,
       warn: true,
       extraProperties: {
-        'display': 'inline-block',
-        'vertical-align': 'middle',
-      },
-    }),
+        display: "inline-block",
+        "vertical-align": "middle"
+      }
+    })
   ],
-  transformers: [
-    transformerDirectives(),
-    transformerVariantGroup(),
-  ],
-})
+  transformers: [transformerDirectives(), transformerVariantGroup()]
+});
