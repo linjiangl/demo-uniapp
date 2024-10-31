@@ -63,14 +63,14 @@
     "selectedColor": "#01beff",
     "backgroundColor": "#FFFFFF",
     "borderStyle": "white",
-    "spacing": "8rpx",
-    "height": "110rpx",
-    "fontSize": "21rpx",
+    "spacing": "3px",
+    "height": "50px",
+    "fontSize": "10px",
     "midButton": {
-      "width": "110rpx",
-      "height": "165rpx",
+      "width": "50px",
+      "height": "70px",
       "text": "记账",
-      "iconWidth": "110rpx",
+      "iconWidth": "42px",
       "iconPath": "/static/images/tabbar/center.png"
     },
     "list": [
